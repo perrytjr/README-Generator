@@ -1,3 +1,8 @@
+var inquirer = require("inquirer");
+var fs = require('fs');
+const util = require('util');
+
+
 // array of questions for user
 inquirer
   .prompt([
@@ -52,14 +57,20 @@ inquirer
        
         ])
 
+        .then(function (answers) {
+            const name = answers.name;
+
+            console.log(answers);
+        })
+        
 // function to write README file
-function writeToFile(fileName, data) {
-}
+//function writeToFile(fileName, data) {
+////}
 
 // function to initialize program
-function init() {
+//function init() {
 
-}
+//}
 
 // function call to initialize program
-init();
+//init();
