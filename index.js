@@ -3,6 +3,56 @@ var fs = require('fs');
 const util = require('util');
 
 
+
+
+
+
+
+
+function getHtmlOutput(answers) {
+    const name = answers.projectTitle;
+    const projectDescription = answers.projectDescription;
+    const instalationInstructions = answers.instalationInstructions;
+    const usageInformation = answers.usageInformation;
+    const contributionGuidelines = answers.contributionGuidlines;
+    const testInstructions = answers.testInstructions;
+    const licenseName = answers.licenseName;
+    const userName = answers.userName;
+    const emailAddress = answers.emailAddress;
+
+
+    return (`
+    # ${projectTitle}
+    ## Description
+    ${projectDescription}
+    [Instalation] (#Instalation)
+    [Information] (#Information)
+    [Contribution] (#Contribution)
+    [Test] (#Test)
+    [License] (#License)
+    [Questions] (#Questions)
+
+
+    ## Instalation
+    ${instalationInstructions}
+    ## Information
+    ${usageInformation}
+    ## Contributing
+    ${contributionGuidelines}
+    ## Test
+    ${testInstructions}
+    ## License
+    ${licenseName}
+    ## Questions
+    [GitHub](http://github.com/${userName}) 
+    Email : ${emailAddress}
+    
+    `)
+
+    console.log(answers);
+
+
+}
 // array of questions for user
 inquirer
     .prompt([
@@ -58,19 +108,19 @@ inquirer
     ])
 
     .then(function (answers) {
-
-        const name = answers.projectTitle;
-        const projectDescription = answers.projectDescription;
-        const instalationInstructions = answers.instalationInstructions;
-        const usageInformation = answers.usageInformation;
-        const contributionGuidelines = answers.contributionGuidlines;
-        const testInstructions = answers.testInstructions;
-        const licenseName = answers.licenseName;
-        const userName = answers.userName;
-        const emailAddress = answers.emailAddress;
-        
-        console.log(answers);
+        return getHtmlOutput(answers);
     })
+    .then(function(htmlOutput){
+        return thenableWriteFile('./portfolio.html', htmlOutput);
+    })
+    .then(function () {
+        console.log('All done!');
+    })
+    .catch(function (error) {
+        console.log('Oh noes! An error!', error);
+    });
+    
+
 
 // function to write README file
 //function writeToFile(fileName, data) {
