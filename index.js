@@ -4,13 +4,13 @@ const util = require('util');
 
 
 
-
+const thenableWriteFile = util.promisify(fs.writeFile);
 
 
 
 
 function getHtmlOutput(answers) {
-    const name = answers.projectTitle;
+    const projectTitle = answers.projectTitle;
     const projectDescription = answers.projectDescription;
     const instalationInstructions = answers.instalationInstructions;
     const usageInformation = answers.usageInformation;
@@ -20,6 +20,7 @@ function getHtmlOutput(answers) {
     const userName = answers.userName;
     const emailAddress = answers.emailAddress;
 
+    console.log(answers);
 
     return (`
     # ${projectTitle}
@@ -49,7 +50,7 @@ function getHtmlOutput(answers) {
     
     `)
 
-    console.log(answers);
+    
 
 
 }
@@ -111,7 +112,7 @@ inquirer
         return getHtmlOutput(answers);
     })
     .then(function(htmlOutput){
-        return thenableWriteFile('./portfolio.html', htmlOutput);
+        return thenableWriteFile('README.md', htmlOutput);
     })
     .then(function () {
         console.log('All done!');
