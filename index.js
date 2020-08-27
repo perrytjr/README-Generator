@@ -5,11 +5,11 @@ const util = require('util');
 
 // array of questions for user
 inquirer
-  .prompt([
+    .prompt([
         {
             type: "input",
             message: "What is your Project Title?",
-            name: "projectTittle"
+            name: "projectTitle"
         },
         {
             type: "input",
@@ -21,7 +21,7 @@ inquirer
             message: "What are the steps required to install your project?",
             name: "installationInstructions"
         },
-       
+
         {
             type: "input",
             message: "Provide information for usage.",
@@ -29,8 +29,8 @@ inquirer
         },
         {
             type: "input",
-            message: "Provide test instructions.",
-            name: "testsInstructions"
+            message: "Provide Contribution Guidelines.",
+            name: "contributionGuidelines"
         },
         {
             type: "input",
@@ -43,7 +43,7 @@ inquirer
             choices: ['MIT', 'GNU',],
             name: "licenseName"
         },
-       
+
         {
             type: "input",
             message: "What is your GitHub user name?",
@@ -54,15 +54,24 @@ inquirer
             message: "What is your email address?",
             name: "emailAddress"
         }
-       
-        ])
 
-        .then(function (answers) {
-            const name = answers.name;
+    ])
 
-            console.log(answers);
-        })
+    .then(function (answers) {
+
+        const name = answers.projectTitle;
+        const projectDescription = answers.projectDescription;
+        const instalationInstructions = answers.instalationInstructions;
+        const usageInformation = answers.usageInformation;
+        const contributionGuidelines = answers.contributionGuidlines;
+        const testInstructions = answers.testInstructions;
+        const licenseName = answers.licenseName;
+        const userName = answers.userName;
+        const emailAddress = answers.emailAddress;
         
+        console.log(answers);
+    })
+
 // function to write README file
 //function writeToFile(fileName, data) {
 ////}
