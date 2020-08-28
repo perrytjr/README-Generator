@@ -9,7 +9,7 @@ const thenableWriteFile = util.promisify(fs.writeFile);
 
 
 
-function getHtmlOutput(answers) {
+function getReadmeOutput(answers) {
     const projectTitle = answers.projectTitle;
     const projectDescription = answers.projectDescription;
     const instalationInstructions = answers.instalationInstructions;
@@ -109,10 +109,10 @@ inquirer
     ])
 
     .then(function (answers) {
-        return getHtmlOutput(answers);
+        return getReadmeOutput(answers);
     })
-    .then(function(htmlOutput){
-        return thenableWriteFile('README.md', htmlOutput);
+    .then(function(readmeOutput){
+        return thenableWriteFile('README.md', readmeOutput);
     })
     .then(function () {
         console.log('All done!');
