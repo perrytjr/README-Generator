@@ -30,7 +30,7 @@ ${projectDescription}
  * [Instalation](#instalation)
  * [Information](#usage-information)
  * [Contribution](#contributing)
- * [Test](#tests)
+ * [Test](#test)
  * [License](#license)
  * [Questions](#questions)
 
