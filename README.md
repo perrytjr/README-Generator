@@ -1,27 +1,29 @@
 
-    # Readme Generator
-    ## Description
-    i wanted to create a readme generator that helps software makers make great readmes. 
-    [Instalation] (#Instalation)
-    [Information] (#Information)
-    [Contribution] (#Contribution)
-    [Test] (#Test)
-    [License] (#License)
-    [Questions] (#Questions)
+# laksjdf
+## Description
+alsdkfj
+## Table of Contents
+[Instalation] (#instalation)
+[Information] (#information)
+[Contribution] (#contribution)
+[Test] (#test)
+[License] (#license)
+[Questions] (#questions)
 
 
-    ## Instalation
-    undefined
-    ## Information
-    you can use this application and change what is included in your readme. 
-    ## Contributing
-    undefined
-    ## Test
-    not sure what this is yet
-    ## License
-    MIT
-    ## Questions
-    [GitHub](http://github.com/perrytjr) 
-    Email : perrytjr@gmail.com
+## Instalation
+undefined
+## Usage Information
+alsdkjf
+## Contributing
+undefined
+## Test
+laksjdf
+## License
+MIT
+## Questions
+Please contact me either thought GitHub or directly to my personal email address bellow:
+[GitHub](http://github.com/laskdjf) 
+Email : alskjfd
     
     

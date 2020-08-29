@@ -23,30 +23,32 @@ function getReadmeOutput(answers) {
     console.log(answers);
 
     return (`
-    # ${projectTitle}
-    ## Description
-    ${projectDescription}
-    [Instalation] (#Instalation)
-    [Information] (#Information)
-    [Contribution] (#Contribution)
-    [Test] (#Test)
-    [License] (#License)
-    [Questions] (#Questions)
+# ${projectTitle}
+## Description
+${projectDescription}
+## Table of Contents
+[Instalation] (#instalation)
+[Information] (#information)
+[Contribution] (#contribution)
+[Test] (#test)
+[License] (#license)
+[Questions] (#questions)
 
 
-    ## Instalation
-    ${instalationInstructions}
-    ## Information
-    ${usageInformation}
-    ## Contributing
-    ${contributionGuidelines}
-    ## Test
-    ${testInstructions}
-    ## License
-    ${licenseName}
-    ## Questions
-    [GitHub](http://github.com/${userName}) 
-    Email : ${emailAddress}
+## Instalation
+${instalationInstructions}
+## Usage Information
+${usageInformation}
+## Contributing
+${contributionGuidelines}
+## Test
+${testInstructions}
+## License
+${licenseName}
+## Questions
+Please contact me either thought GitHub or directly to my personal email address bellow:
+[GitHub](http://github.com/${userName}) 
+Email : ${emailAddress}
     
     `)
 
@@ -112,7 +114,7 @@ inquirer
         return getReadmeOutput(answers);
     })
     .then(function(readmeOutput){
-        return thenableWriteFile('README.md', readmeOutput);
+        return thenableWriteFile("README.md", readmeOutput);
     })
     .then(function () {
         console.log('All done!');
