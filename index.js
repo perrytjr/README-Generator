@@ -27,12 +27,12 @@ function getReadmeOutput(answers) {
 ## Description
 ${projectDescription}
 ## Table of Contents
- [Instalation] (#Instalation)
- [Information] (#Usage-Information)
- [Contribution] (#Contributing)
- [Test] (#Tests)
- [License] (#License)
- [Questions] (#Questions)
+ * [Instalation] (#Instalation)
+ * [Information] (#Usage-Information)
+ * [Contribution] (#Contributing)
+ * [Test] (#Tests)
+ * [License] (#License)
+ * [Questions] (#Questions)
 
 
 ## Instalation
