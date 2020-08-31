@@ -1,29 +1,30 @@
 
-# alskjf
+![GitHub license](https://img.shields.io/badge/license-GNU-blue.svg)
+# readme generator
 ## Description
-alskjfd
+makes readme.md files
 ## Table of Contents
- * [Instalation](#instalation)
+ * [Installation](#installation)
  * [Information](#usage-information)
  * [Contribution](#contributing)
- * [Test](#tests)
+ * [Test](#test)
  * [License](#license)
  * [Questions](#questions)
 
 
-## Instalation
-undefined
+## Installation
+downlakdfj
 ## Usage Information
-alsdfkj
+ajksjfsfjlsfa
 ## Contributing
-undefined
+aksjfal;sfkj;
 ## Test
-salkdjf
+lksajf
 ## License
-MIT
+This application is licensed under the GNU license.
 ## Questions
-Please contact me either thought GitHub or directly to my personal email address bellow:
-[GitHub](http://github.com/lsakjdf) 
-Email : aslkdfj
+Please contact me either through GitHub or directly to my personal email address bellow:
+[GitHub](http://github.com/perrytjr) 
+Email : perrytjr@gmail.com
     
     

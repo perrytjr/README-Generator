@@ -12,9 +12,9 @@ const thenableWriteFile = util.promisify(fs.writeFile);
 function getReadmeOutput(answers) {
     const projectTitle = answers.projectTitle;
     const projectDescription = answers.projectDescription;
-    const instalationInstructions = answers.instalationInstructions;
+    const installationInstructions = answers.installationInstructions;
     const usageInformation = answers.usageInformation;
-    const contributionGuidelines = answers.contributionGuidlines;
+    const contributionGuidelines = answers.contributionGuidelines;
     const testInstructions = answers.testInstructions;
     const licenseName = answers.licenseName;
     const userName = answers.userName;
@@ -23,11 +23,12 @@ function getReadmeOutput(answers) {
     console.log(answers);
 
     return (`
+![GitHub license](https://img.shields.io/badge/license-${licenseName}-blue.svg)
 # ${projectTitle}
 ## Description
 ${projectDescription}
 ## Table of Contents
- * [Instalation](#instalation)
+ * [Installation](#installation)
  * [Information](#usage-information)
  * [Contribution](#contributing)
  * [Test](#test)
@@ -35,8 +36,8 @@ ${projectDescription}
  * [Questions](#questions)
 
 
-## Instalation
-${instalationInstructions}
+## Installation
+${installationInstructions}
 ## Usage Information
 ${usageInformation}
 ## Contributing
@@ -44,9 +45,9 @@ ${contributionGuidelines}
 ## Test
 ${testInstructions}
 ## License
-${licenseName}
+This application is licensed under the ${licenseName} license.
 ## Questions
-Please contact me either thought GitHub or directly to my personal email address bellow:
+Please contact me either through GitHub or directly to my personal email address bellow:
 [GitHub](http://github.com/${userName}) 
 Email : ${emailAddress}
     
