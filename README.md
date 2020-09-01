@@ -1,8 +1,8 @@
 
 ![GitHub license](https://img.shields.io/badge/license-GNU-blue.svg)
-# readme generator
+# Readme Generator
 ## Description
-makes readme.md files
+A command-line application that will allow for a quick and easy generation of a project Readme.
 ## Table of Contents
  * [Installation](#installation)
  * [Information](#usage-information)
@@ -13,18 +13,18 @@ makes readme.md files
 
 
 ## Installation
-downlakdfj
+This is where installation instructions are added. 
 ## Usage Information
-ajksjfsfjlsfa
+A usage section so you can describe how to use your application. 
 ## Contributing
-aksjfal;sfkj;
+Contributions if you chhose to allow go here. 
 ## Test
-lksajf
+Any test you have run can be added and described here. 
 ## License
 This application is licensed under the GNU license.
 ## Questions
 Please contact me either through GitHub or directly to my personal email address bellow:
-[GitHub](http://github.com/perrytjr) 
-Email : perrytjr@gmail.com
+[GitHub](http://github.com/Perrytjr) 
+Email : Perrytjr@gmail.com
     
     
